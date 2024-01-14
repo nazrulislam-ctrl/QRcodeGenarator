@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container mt-5 mb-5 containerBackground">
+        <div class="text-center mb-3"><Span class="  fs-1 fw-bolder background">Generate QR code</Span></div>
+        <div class="row">
+            <div class="col-6">
+                <div>
+                    <div class="w-100 h-50 p-3" >
+                        <input id="userInputText" class="w-100 border border-2 border-dark-subtle" type="text" placeholder="Enter your text"> 
+                    </div>
+            
+                    <div class="d-flex ">
+                        <div class=" w-75">
+                            <div class="w-100 h-50 p-3" >
+                                <input id="userInputHeight" class="w-100 border border-2 border-dark-subtle" type="text" placeholder="Enter Height"> 
+                            </div>
+                    
+                            <div class="w-100 h-50 p-3" >
+                                <input id="userInputWidth" class="w-100 border border-2 border-dark-subtle" type="text" placeholder="Enter Width">
+                            </div>
+                        </div>
+                        <div class="w-25 d-flex justify-content-center align-content-center ">
+                            <button id="generateQrCode" class="border border-2 border-black bg-info m-2 fs-5 fw-bold">Generate</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="col-6" id="imgBox">
+                <div class="d-flex justify-content-center align-content-center"><img id="qrImg" src="" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
